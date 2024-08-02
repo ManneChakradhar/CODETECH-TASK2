@@ -25,9 +25,15 @@ k clusters in the data points update the centroid through the calculation of the
 Iterative minimization of the total within the sum of squares. Then through the iterative minimization of the total sum of the square, the assignment stop wavering when we - - Achieve maximum iteration. The default value is 10 which the R software uses for the maximum iterations.
 
 # Dataset
-The dataset used for this analysis is Malls Customers, which contains information about customer demographics, purchasing behavior, and other relevant features.
-
-
+The dataset used for this analysis is Malls Customers, which contains information about customer demographics, purchasing behaviour, and other relevant features.
+The objective of this project is to segregate customers into specific groups so that the marketing team can target them with products and services tailored to those specific groups.
+In this project, we start by cleaning, transforming and performing EDA on the dataset. We then find an optimal number of clusters using the Elbow method and train our KMeans model based on an optimal number of clusters. Lastly, we perform PCA to transform and gain insights from the data.
+The dataset contains CustomerID, Gender, Age, Annual Income and Spending Score(1-100). It contains 200 customer details.
+- customer_id: a unique ID assigned to the customer.
+- gender: gender of the customer (male or female).
+- age: age of the customer.
+- annual_income: the annual income of customers in thousands of dollars.
+- spending_score: the score assigned by the mall based on customer behaviour and spending nature.
 
 ## Methodology
 ### Data Preprocessing:
@@ -40,24 +46,27 @@ The dataset used for this analysis is Malls Customers, which contains informatio
 - Evaluated the optimal number of clusters using the Elbow Method and Silhouette Score.
 
 ### Analysis:
-- Analyzed each segment to identify key characteristics and behaviors.
+- Analyzed each segment to identify key characteristics and behaviours.
 - Visualized clusters and their distribution across different features.
 
 ## Determining Optimal Clusters
   While working with clusters, you need to specify the number of clusters to use. You would like to utilize the optimal number of clusters. To help you in 
   determining the optimal clusters, there are three popular methods –
-
-  Elbow method The main goal behind cluster partitioning methods like k-means is to define the clusters such that the intra-cluster variation stays minimum.
+  Elbow method The main goal behind cluster partitioning methods like k-means is to define the clusters such that the intra-cluster variation stays minimal.
 
 # Installation
-## Tools and Libraries:
+## Jupyter Notebook:
+Provides an interactive environment for running Python code and documenting the analysis process. 
+## Libraries:
+Key libraries such as Pandas (for data manipulation), Matplotlib and Seaborn (for data visualization), and NumPy (for numerical operations) are utilized.
 
+## Tools and Libraries:
+The tools used in this project include:
+Python - This was needed to conduct Data Quality Assessment and also for Data Cleaning processes. With Python libraries pandas, matplotlib, and seaborn exploratory data analysis of the datasets and gaining useful insights from the data was possible.
 
 # Results and Findings
-
-
-
- # Conclusion
+ We have Categorised the data using k-means clustering and plotted the clusters and their Centroids into 5 clusters.
+ Using KMeans Clustering by the data analysis, the above is the visualisation of all 5 clusters based on Annual Income and Spending Score
 
 
 
